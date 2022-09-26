@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <main>
+        <div id="resultArea"></div>
+        <table>
+            <tr>
+                <td class="ac-delete" onclick="deleteALL()">AC</td>
+                <td class="ac-delete" onclick="deleteLast()">DEL</td>
+                <td id="dark_mode_button" class="change-color">Dark/Light</td> 
+    
+                <td onclick="calculater(' / ')" class="special-symbols">/</td>
+            </tr>
+            <tr>
+                <td onclick="calculater(7)">7</td>
+                <td onclick="calculater(8)">8</td>
+                <td onclick="calculater(9)">9</td>
+                <td onclick="calculater(' * ')" class="special-symbols">x</td>
+            </tr>
+            <tr>
+                <td onclick="calculater(4)">4</td>
+                <td onclick="calculater(5)">5</td>
+                <td onclick="calculater(6)">6</td>
+                <td onclick="calculater(' - ')" class="special-symbols">-</td>
+            </tr>
+            <tr>
+                <td onclick="calculater(1)">1</td>
+                <td onclick="calculater(2)">2</td>
+                <td onclick="calculater(3)">3</td>
+                <td onclick="calculater(' + ')" class="special-symbols">+</td>
+            </tr>       
+            <tr>
+                <td onclick="calculater(0)">0</td>
+                <td onclick="calculater('0.')">0,</td>            
+                <td onclick="calculater('.')">,</td>
+                <td onclick="calculateResult()" id="result">=</td>
+            </tr>
+        </table>
+        <script src="index.js"></script></main>
+
+</body>
+</html>
